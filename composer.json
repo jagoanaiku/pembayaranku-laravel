@@ -1,0 +1,46 @@
+{
+  "name": "pembayaranku/laravel",
+  "description": "Official Laravel integration for PembayaranKU Merchant API V1 and Hosted Checkout",
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "PT MEDIA SIRINGO ABADI",
+      "role": "Maintainer"
+    }
+  ],
+  "keywords": [
+    "pembayaranku",
+    "laravel",
+    "payments",
+    "qris",
+    "hosted-checkout",
+    "webhooks"
+  ],
+  "homepage": "https://github.com/jagoanaiku/pembayaranku-laravel",
+  "support": {
+    "issues": "https://github.com/jagoanaiku/pembayaranku-laravel/issues",
+    "source": "https://github.com/jagoanaiku/pembayaranku-laravel"
+  },
+  "require": {
+    "php": ">=8.1",
+    "illuminate/support": "^10.0|^11.0|^12.0",
+    "illuminate/database": "^10.0|^11.0|^12.0",
+    "illuminate/routing": "^10.0|^11.0|^12.0",
+    "pembayaranku/php-sdk": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "PembayaranKu\\Laravel\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PembayaranKu\\Laravel\\PembayaranKuServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
